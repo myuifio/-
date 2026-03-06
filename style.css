@@ -100,12 +100,27 @@ a {
   text-transform: uppercase;
 }
 
+.version-group + .version-group {
+  border-top: 1px solid var(--line);
+}
+
+.version-title {
+  margin: 0;
+  padding: 16px 24px;
+  color: var(--accent);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: rgba(255, 255, 255, 0.02);
+}
+
 .file-row {
   padding: 18px 24px;
   border-bottom: 1px solid var(--line);
 }
 
-.file-row:last-child {
+.version-group .file-row:last-child {
   border-bottom: 0;
 }
 
